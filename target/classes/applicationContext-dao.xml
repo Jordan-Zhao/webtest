@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc     
+        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       " 
+    default-autowire="byName"
+    >
+  
+<!--    <bean id="tddlDataSource" class="com.taobao.tddl.client.jdbc.TDataSource" -->
+<!--         init-method="init"> -->
+<!--         <property name="appName" value="yunosbbs" /> -->
+<!--         <property name="dynamicRule" value="true" /> -->
+<!--         不使用动态配置则使用规则文件<property name="appRuleFile" value="classpath:tddl-rule.xml"/> -->
+<!--     </bean> -->
+    
+<!--     sequence生成 -->
+<!--     <bean id="sequenceDao" class="com.taobao.tddl.client.sequence.impl.GroupSequenceDao" -->
+<!--         init-method="init"> -->
+<!--         <property name="appName" value="yunosbbs" /> -->
+<!--         <property name="dscount" value="4" /> -->
+<!--         不一定选择所有的库来生成，一般有容灾即可，需要在这些group对应的库上建sequence表，字段默认为name(varchar),value(bigint),gmt_modified(datetime) -->
+<!--         <property name="dbGroupKeys"> -->
+<!--             <list> -->
+<!--                 <value>YOUAPPNAME_00_GROUP</value> -->
+<!--                 <value>YOUAPPNAME_01_GROUP</value> -->
+<!--                 <value>YOUAPPNAME_02_GROUP</value> -->
+<!--                 <value>YOUAPPNAME_03_GROUP</value> -->
+<!--             </list> -->
+<!--         </property> -->
+<!--         自动初始化值，sequence_3.2以上推荐配置为true -->
+<!--         <property name="adjust" value="true" /> -->
+<!--     </bean> -->
+
+<!--     <bean id="your_seq_id" class="com.taobao.tddl.client.sequence.impl.GroupSequence" -->
+<!--         init-method="init"> -->
+<!--         <property name="sequenceDao" ref="sequenceDao" /> -->
+<!--         sequence生成器名,对应sequence表中一条记录的name字段值 -->
+<!--         <property name="name" value="your_table_name" /> -->
+<!--     </bean> -->
+	
+</beans>
